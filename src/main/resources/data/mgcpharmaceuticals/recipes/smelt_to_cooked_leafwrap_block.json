@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 150,
+  "experience": 3.15,
+  "ingredient": {
+    "item": "mgcpharmaceuticals:raw_leafwrap_block"
+  },
+  "result": "mgcpharmaceuticals:cooked_leafwrap_block"
+}

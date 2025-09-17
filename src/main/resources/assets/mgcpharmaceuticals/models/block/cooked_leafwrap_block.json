@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mgcpharmaceuticals:block/cooked_leafwrap_block"
+  }
+}

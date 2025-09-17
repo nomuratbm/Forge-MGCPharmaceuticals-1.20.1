@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mgcpharmaceuticals:raw_leafwrap"
+    }
+  },
+  "result": {
+    "item": "mgcpharmaceuticals:raw_leafwrap_block"
+  }
+}

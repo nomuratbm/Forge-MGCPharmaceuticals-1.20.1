@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mgcpharmaceuticals:raw_leafwrap_block"
+    }
+  ],
+  "result": {
+    "item": "mgcpharmaceuticals:raw_leafwrap",
+    "count": 9
+  }
+}
