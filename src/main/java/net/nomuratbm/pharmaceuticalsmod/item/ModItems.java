@@ -21,6 +21,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.RAW_LEAFWRAP)));
     public static final RegistryObject<Item> COOKED_LEAFWRAP = ITEMS.register("cooked_leafwrap",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_LEAFWRAP)));
+    public static final RegistryObject<Item> SPARKLINGSUGAR = ITEMS.register("sparklingsugar",
+            () -> new Item(new Item.Properties().food(ModFoods.SPARKLINGSUGAR)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

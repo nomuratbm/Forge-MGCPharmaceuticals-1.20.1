@@ -17,4 +17,11 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 1), 1f)
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 100), 1f)
             .build();
+
+    public static final FoodProperties SPARKLINGSUGAR = new FoodProperties.Builder()
+            .nutrition(1).fast()
+            .saturationMod(0.1f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 1f)
+            .effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 200), 1f)
+            .build();
 }
