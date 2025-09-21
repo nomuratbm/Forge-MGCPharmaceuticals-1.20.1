@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "bites=1": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines1"
+    },
+    "bites=2": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines2"
+    },
+    "bites=3": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines3"
+    },
+    "bites=4": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines4"
+    },
+    "bites=5": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines5"
+    },
+    "bites=6": {
+      "model": "mgcpharmaceuticals:block/sparklingsugar_lines6"
+    }
+  }
+}

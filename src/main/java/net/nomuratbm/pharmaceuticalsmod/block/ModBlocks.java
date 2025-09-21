@@ -12,6 +12,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nomuratbm.pharmaceuticalsmod.PharmaceuticalsMod;
 import net.nomuratbm.pharmaceuticalsmod.block.custom.PowerleafCropBlock;
+import net.nomuratbm.pharmaceuticalsmod.block.custom.SparklingSugarBlock;
+import net.nomuratbm.pharmaceuticalsmod.block.custom.SparklingSugarLinesBlock;
 import net.nomuratbm.pharmaceuticalsmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -26,6 +28,15 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.WOOL).strength(0.2F)));
     public static final RegistryObject<Block> COOKED_LEAFWRAP_BLOCK = registerBlock("cooked_leafwrap_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.WOOL).strength(0.2F)));
+    public static final RegistryObject<Block> SPARKLINGSUGAR = BLOCKS.register("sparklingsugar",
+            () -> new SparklingSugarBlock(BlockBehaviour.Properties
+                    .copy(Blocks.CAKE)
+                    .noOcclusion()
+                    .strength(0.2f)
+                    .sound(SoundType.SAND)));
+    public static final RegistryObject<Block> SPARKLINGSUGAR_LINES = BLOCKS.register("sparklingsugar_lines",
+            () -> new SparklingSugarLinesBlock(BlockBehaviour.Properties
+                    .copy(Blocks.CAKE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

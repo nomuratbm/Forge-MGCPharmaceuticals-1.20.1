@@ -1,0 +1,19 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "line": "mgcpharmaceuticals:block/sparklingsugar"
+  },
+  "elements": [
+    { "from": [ 12.9, 0, 2 ],
+      "to": [ 14, 1, 14 ],
+      "faces": {
+        "north": {"texture": "#line"},
+        "south": {"texture": "#line"},
+        "west": {"texture": "#line"},
+        "east": {"texture": "#line"},
+        "up": {"texture": "#line"},
+        "down": {"texture": "#line","cullface": "down"}
+      }
+    }
+  ]
+}

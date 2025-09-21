@@ -1,5 +1,6 @@
 package net.nomuratbm.pharmaceuticalsmod.item;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nomuratbm.pharmaceuticalsmod.PharmaceuticalsMod;
 import net.nomuratbm.pharmaceuticalsmod.block.ModBlocks;
+import net.nomuratbm.pharmaceuticalsmod.item.custom.CreditCardItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -21,8 +23,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.RAW_LEAFWRAP)));
     public static final RegistryObject<Item> COOKED_LEAFWRAP = ITEMS.register("cooked_leafwrap",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_LEAFWRAP)));
-    public static final RegistryObject<Item> SPARKLINGSUGAR = ITEMS.register("sparklingsugar",
-            () -> new Item(new Item.Properties().food(ModFoods.SPARKLINGSUGAR)));
+    public static final RegistryObject<Item> SPARKLINGSUGAR_ITEM = ITEMS.register("sparklingsugar",
+            () -> new BlockItem(ModBlocks.SPARKLINGSUGAR.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CREDITCARD = ITEMS.register("creditcard",
+            () -> new CreditCardItem(new Item.Properties().durability(100)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
