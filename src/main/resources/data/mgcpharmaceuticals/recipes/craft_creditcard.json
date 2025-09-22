@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IPR",
+    "RRR"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "mgcpharmaceuticals:creditcard"
+  }
+}

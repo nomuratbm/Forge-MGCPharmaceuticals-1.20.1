@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COOKED_LEAFWRAP.get());
                         output.accept(ModItems.CREDITCARD.get());
                         output.accept(ModItems.SPARKLINGSUGAR_ITEM.get());
+                        output.accept(ModItems.BROWNIE.get());
 
                         output.accept(ModBlocks.RAW_LEAFWRAP_BLOCK.get());
                         output.accept(ModBlocks.COOKED_LEAFWRAP_BLOCK.get());

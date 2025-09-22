@@ -27,6 +27,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.SPARKLINGSUGAR.get(), new Item.Properties()));
     public static final RegistryObject<Item> CREDITCARD = ITEMS.register("creditcard",
             () -> new CreditCardItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> BROWNIE = ITEMS.register("brownie",
+            () -> new Item(new Item.Properties().food(ModFoods.BROWNIE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

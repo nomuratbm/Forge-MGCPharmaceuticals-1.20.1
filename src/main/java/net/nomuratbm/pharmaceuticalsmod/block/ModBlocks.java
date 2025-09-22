@@ -33,7 +33,7 @@ public class ModBlocks {
                     .copy(Blocks.CAKE)
                     .noOcclusion()
                     .strength(0.2f)
-                    .sound(SoundType.SAND)));
+                    .sound(SoundType.SWEET_BERRY_BUSH)));
     public static final RegistryObject<Block> SPARKLINGSUGAR_LINES = BLOCKS.register("sparklingsugar_lines",
             () -> new SparklingSugarLinesBlock(BlockBehaviour.Properties
                     .copy(Blocks.CAKE)));

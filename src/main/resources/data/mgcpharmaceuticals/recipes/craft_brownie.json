@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "CMS",
+    "WEW"
+  ],
+  "key": {
+    "P": {
+      "item": "mgcpharmaceuticals:powerleaf"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    }
+  },
+  "result": {
+    "item": "mgcpharmaceuticals:brownie",
+    "count": 9
+  }
+}

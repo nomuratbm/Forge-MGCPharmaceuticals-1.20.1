@@ -5,6 +5,8 @@ import net.minecraft.stats.Stats;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
@@ -71,6 +73,11 @@ public class SparklingSugarLinesBlock extends CakeBlock {
         } else {
             pPlayer.awardStat(Stats.EAT_CAKE_SLICE);
             pPlayer.getFoodData().eat(2, 0.1F);
+            if(!pLevel.isClientSide()) {
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 20 * 30, 0));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 20 * 60, 1));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 60, 0));
+            }
             int i = pState.getValue(BITES);
             pLevel.gameEvent(pPlayer, GameEvent.EAT, pPos);
             if (i < 6) {
